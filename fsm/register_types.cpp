@@ -8,9 +8,9 @@
 
 void register_fsm_types() {
 
-    ObjectTypeDB::register_type<StateMachine<Node> >();
-    ObjectTypeDB::register_type<State<Node> >();
-
+        ObjectTypeDB::register_type<StateMachine<Node> >();
+		ObjectTypeDB::register_type<State<Node> >();
+		
 }
 
 void unregister_fsm_types() {

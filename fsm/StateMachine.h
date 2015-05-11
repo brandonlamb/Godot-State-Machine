@@ -23,7 +23,7 @@ protected:
 		ObjectTypeDB::bind_method(_MD("get_previous_state"),&StateMachine::PreviousState);
 		ObjectTypeDB::bind_method(_MD("get_global_state"),&StateMachine::GlobalState);
 		ObjectTypeDB::bind_method(_MD("set_owner","owner"),&StateMachine::setOwner);
-	}
+	};
 	
 private:
 	//FSM's owner
@@ -50,6 +50,7 @@ public:
 	
 	//Set Owner
 	void setOwner(Node* o){
+		this->set_owner(o);
 		this->m_Owner = o;
 	}
 
